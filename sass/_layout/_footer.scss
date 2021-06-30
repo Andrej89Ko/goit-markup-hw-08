@@ -1,0 +1,36 @@
+.footer {
+    margin: 0 auto;
+    background-color: var(--c-dark-blue);
+}
+
+.container-footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+// MOBILE
+@media screen and(max-width: 767px) {
+    .container-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+// TABLeT
+@media screen and(min-width:768px) {
+    .container-footer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+// DESkTOP
+@media screen and (min-width: 1200px) {
+    .container-footer {
+        display: flex;
+        align-items: baseline;
+    }
+}
