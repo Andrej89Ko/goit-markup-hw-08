@@ -40,6 +40,9 @@
     margin-bottom: 30px;
     width: calc((100% - 60px) / 2);
   }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 90px) / 3);
+  }
 
   // @media screen and(min-width:1200px) {
 
@@ -89,8 +92,8 @@
   letter-spacing: 0.03em;
   color: var(--c-white);
   background-color: var(--c-blue);
-  // width: 370px;
-  // height: 294px;
+  width: 370px;
+  height: 294px;
   transform: translateY(100%);
   padding: 63px 24px;
   overflow: auto;

@@ -1,3 +1,8 @@
+
+
+
+
+
 .menu-btn {
     display: block;
     margin: 0;
@@ -7,5 +12,14 @@
     border: none;
     width: 40px;
     height: 40px;
-}
+    cursor: pointer;
 
+        &:hover .menu-btn__icon,
+        &:focus .menu-btn__icon {
+            fill: var(--c-blue);
+            transition-property: fill, color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-delay: 0ms;
+        }
+    }

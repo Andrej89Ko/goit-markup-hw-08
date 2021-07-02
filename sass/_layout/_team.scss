@@ -25,6 +25,14 @@
   box-sizing: border-box;
   padding: 30px 122px 24px 122px;
   background-color: var(--c-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
 }
 
 .team-list__item__title {
