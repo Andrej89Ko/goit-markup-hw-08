@@ -1,7 +1,8 @@
 .menu-container.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto
+    pointer-events: auto;
+
 }
 
 .menu-nav-list {
@@ -93,6 +94,10 @@
     visibility: hidden;
     pointer-events: none;
     background-color: var(--c-white);
+
+    // @media screen and (min-width: 768px) {
+    //     display: none;
+    // }
 }
 
 .mobile-menu {
@@ -100,7 +105,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
-    z-index: 101;
+    z-index: 1;
 }
 
 .menu-btn__close {
@@ -121,14 +126,5 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-delay: 0ms;
-    }
-}
-
-
-@media screen and(min-width:768px) {
-
-    .menu-btn,
-    .menu-container {
-        display: none;
     }
 }

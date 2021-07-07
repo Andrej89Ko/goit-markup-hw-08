@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -106,7 +107,7 @@
     </header>
     <main class="main">
         <section class="header-page">
-            <div class="container header-page-container">
+            <div class="header-page-container">
                 <h1 class="header-page-text">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="header-page-btn btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -174,40 +175,48 @@
         <!-- FEATURES -->
 
         <section class="features">
-            <div class="container container-features">
+            <div class="container">
                 <ul class="feature-list list">
-                    <li class="feature-list-item link">
-                        <svg class="feature-list-item-icon">
-                            <use href="./images/sprite/sprite.svg#icon-antenna"></use>
-                        </svg>
+                    <li class="feature-list__item link">
+                        <div class="feature-list__icon">
+                            <svg width="70" heigth="70">
+                                <use href="./images/sprite/sprite.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h2 class="feature-subtitle">Внимание к деталям</h2>
-                        <p class="feature-subtitle-text">Идейные соображения, а также начало повседневной работы по
+                        <p class="feature-text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
-                    <li class="feature-list-item link">
-                        <svg class="feature-list-item-icon">
-                            <use href="./images/sprite/sprite.svg#icon-clock"></use>
-                        </svg>
+                    <li class="feature-list__item link">
+                        <div class="feature-list__icon">
+                            <svg width="70" heigth="70">
+                                <use href="./images/sprite/sprite.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h2 class="feature-subtitle">Пунктуальность</h2>
-                        <p class="feature-subtitle-text">Задача организации, в особенности же рамки и место обучения
+                        <p class="feature-text">Задача организации, в особенности же рамки и место обучения
                             кадров
                             влечет за собой.</p>
                     </li>
-                    <li class="feature-list-item link">
-                        <svg class="feature-list-item-icon">
-                            <use href="./images/sprite/sprite.svg#icon-diagram"></use>
-                        </svg>
+                    <li class="feature-list__item link">
+                        <div class="feature-list__icon">
+                            <svg width="70" heigth="70">
+                                <use href="./images/sprite/sprite.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h2 class="feature-subtitle">Планирование</h2>
-                        <p class="feature-subtitle-text">Равным образом консультация с широким активом в
+                        <p class="feature-text">Равным образом консультация с широким активом в
                             значительной
                             степени обуславливает.</p>
                     </li>
-                    <li class="feature-list-item link">
-                        <svg class="feature-list-item-icon">
-                            <use href="./images/sprite/sprite.svg#icon-astronaut"></use>
-                        </svg>
+                    <li class="feature-list__item link">
+                        <div class="feature-list__icon">
+                            <svg width="70" heigth="70">
+                                <use href="./images/sprite/sprite.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h2 class="feature-subtitle">Современные технологии</h2>
-                        <p class="feature-subtitle-text">Значимость этих проблем настолько очевидна, что реализация
+                        <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация
                             плановых заданий.</p>
                     </li>
                 </ul>
@@ -252,8 +261,19 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img class="team-list__item__img" src="./images/team/foto-1.jpg"
-                            alt="igor demyanenko product designer" width="270" height="260">
+                        <picture>
+                    <source
+                        srcset="./images/team/img-1-desktop.jpg 1x, ./images/team/img-1-desktop@2x.jpg 2x"
+                        media="min-width: 1200px">
+                    <source
+                        srcset="./images/team/img-1-tablet.jpg 1x, ./images/team/img-1-tablet@2x.jpg 2x"
+                        media="min-width: 768px">
+                        <source
+                                srcset="./images/teamimg-1-mobile.jpg 1x, ./images/team/img-1-mobile@2x.jpg 2x"
+                                media="max-width: 767px">
+                        <img class="team-list__item__img" src="./images/team/img-1-desktop.jpg"
+                            alt="igor demyanenko product designer">
+                        </picture>
                         <div class="team-list__item__card">
                             <h3 class="team-list__item__title">Игорь Демьяненко</h3>
                             <p class="team-list__item__text">Product Designer</p>
@@ -290,8 +310,18 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img class="team-list__item__img" src="./images/team/foto-2.jpg"
-                            alt="olga repina Frontend Developer" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team/img-2-desktop.jpg 1x, ./images/team/foto-2-desktop@2x.jpg 2x"
+                                media="min-width: 1200px">
+                            <source
+                                srcset="./images/team/img-2-tablet.jpg 1x, ./images/team/img-2-tablet@2x.jpg 2x"
+                                media="min-width: 768px">
+                            <source
+                                srcset="./images/team/img-2-mobile.jpg 1x, ./images/team/img-2-mobile@2x.jpg 2x"
+                                media="max-width: 767px">
+                        <img class="team-list__item__img" src="./images/team/img-2-desktop.jpg"
+                            alt="olga repina Frontend Developer">
+                        </picture>
                         <div class="team-list__item__card">
                             <h3 class="team-list__item__title">Ольга Репина</h3>
                             <p class="team-list__item__text">Frontend Developer</p>
