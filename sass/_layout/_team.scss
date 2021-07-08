@@ -99,13 +99,13 @@
 // TABLET
 @media screen and(min-width:768px) and (max-width:1199px) {
   .team-list {
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 
   .team-list__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
     width: calc((100% - 60px) / 2);
   }
 }

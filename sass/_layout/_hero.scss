@@ -1,4 +1,4 @@
-.header-page {
+.hero {
     background-color: var(--c-dark-blue);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -13,7 +13,7 @@
  
     margin: auto;
   }
-  .header-page-btn {
+  .hero-btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -26,7 +26,7 @@
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-  .header-page-text {
+  .hero__text {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -42,13 +42,13 @@
   (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
-    .header-page {
+    .hero {
           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-img-mobile2x.jpg)
       }
   }
   
   @media screen and (min-width: 768px) {
-    .header-page {
+    .hero {
           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-img-tablet.jpg)
       }
   }
@@ -57,13 +57,13 @@
   screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .header-page{
+    .hero{
           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/bg-img-tablet2x.jpg)
       }
   }
   
   @media screen and (min-width: 1200px) {
-    .header-page {
+    .hero {
           padding-top: 200px;
           padding-bottom: 200px;
           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/img-desktop.jpg)
@@ -74,7 +74,7 @@
   screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-    .header-page {
+    .hero {
           background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/img-desktop2x.jpg)
       }
   }
