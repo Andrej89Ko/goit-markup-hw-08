@@ -1,7 +1,7 @@
-.social-list {
+.social__list {
     display: flex;
   }
-  .social-list-item-link {
+  .social__link {
     display: inline-flex;
     border-radius: 50%;
     justify-content: center;
@@ -18,16 +18,16 @@
         transition-delay: 0ms;
         }
   }
-  .social-list-item:not(:last-child) {
+  .social__item:not(:last-child) {
     margin-right: 10px;
   }
-  .social-list-item-link-icon {
+  .social__icon {
     height: 20px;
     width: 20px;
     fill: var(--c-social);
     
-        .social-list-item-link:hover &,
-        .social-list-item-link:focus & {
+        .social__link:hover &,
+        .social__link:focus & {
         fill: var(--c-white);
     }
   }

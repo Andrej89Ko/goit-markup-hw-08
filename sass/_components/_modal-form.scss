@@ -75,8 +75,8 @@
   .modal-form-checkbox-contract {
     display: inline-block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--txt-accent);
     margin-bottom: 30px;
@@ -87,11 +87,14 @@
         vertical-align: middle;
         height: 15px;
         width: 16px;
-        margin-left: 10px;
         background-color: #ffffff;
         border-radius: 2px;
         border: 1px solid #212121;
         margin-right: 8px;
+
+        @media screen and (min-width:1200px) {
+          margin-left: 10px;
+        }
 
           .modal-form-checkbox:checked + & {
             content: '';
@@ -103,6 +106,11 @@
             border-color: none;
           }
       }
+      @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+      }
+
   }
  
   
@@ -110,9 +118,14 @@
     text-decoration: underline;
     color: var(--c-blue);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    line-height: 1.71;
+    }
   }
   .modal-form-btn {
     font-weight: 700;
