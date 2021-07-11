@@ -1,7 +1,9 @@
-.filter-list {
+.filter {
+    &__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+    }
 
   &__item:not(:last-child) {
     margin-right: 8px;
@@ -19,10 +21,12 @@
 @media screen and(min-width:768px) {
 
 
-  .filter-list {
+  .filter {
+      &__list {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 50px;
+      }
 
     &__item {
       display: flex;
@@ -32,7 +36,7 @@
   }
 }
 
-.filter-text {
+.filter__btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;

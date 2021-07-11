@@ -3,7 +3,7 @@
     background-color: var(--c-dark-blue);
 }
 
-.container-footer {
+.footer__container {
     padding-bottom: 60px;
     padding-top: 60px;
     box-sizing: border-box;
@@ -11,7 +11,7 @@
 
 // MOBILE
 @media screen and(max-width: 767px) {
-    .container-footer {
+    .footer__container {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -20,7 +20,7 @@
 
 // TABLeT
 @media screen and(min-width:768px) {
-    .container-footer {
+    .footer__container {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -29,7 +29,7 @@
 
 // DESkTOP
 @media screen and (min-width: 1200px) {
-    .container-footer {
+    .footer__container {
         display: flex;
         align-items: baseline;
     }

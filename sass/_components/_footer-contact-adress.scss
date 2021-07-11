@@ -1,4 +1,4 @@
-.footer-logo-link {
+.footer__logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -9,15 +9,15 @@
   display: flex;
 }
 
-.footer-web {
+.footer__logo--web {
   color: var(--txt-c-white);
 }
 
-.footer-list-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-list-item-link {
+.footer__link {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -47,7 +47,7 @@
 // MOBILE
 @media screen and(max-width:767px) {
 
-  .container-addres-contact {
+  .footer__addres {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@
 
 // TABLET
 @media screen and(min-width:768px) and (max-width:1199px) {
-  .container-addres-contact {
+  .footer__addres {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@
 
 // DESkTOP
 @media screen and(min-width: 1200px) {
-  .footer-logo-link {
+  .footer__logo {
     font-size: 26px;
     line-height: 1.19;
   }

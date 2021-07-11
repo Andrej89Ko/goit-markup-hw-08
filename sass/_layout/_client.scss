@@ -1,9 +1,9 @@
-.client-container {
+.client__container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -11,13 +11,10 @@
   margin-left: -30px;
 }
 
-.client-list-item {
-  display: inline-flex;
-  justify-content: center;
+.client__item {
   align-items: center;
   border: 1px solid var(--c-social);
   border-radius: 4px;
-  height: 92px;
   width: calc((100% - 60px) /2);
   margin-top: 30px;
   margin-left: 30px;
@@ -36,7 +33,7 @@
   }
 }
 
-.client-list-item-link {
+.client__link {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -44,11 +41,11 @@
   padding: 16px 52px;
 }
 
-.client-list-item-link-icon {
+.client__icon {
   fill: var(--c-social);
 
-  .client-list-item-link:hover &,
-  .client-list-item-link:focus & {
+  .client__link:hover &,
+  .client__link:focus & {
     fill: var(--c-blue);
     transition-property: fill, color;
     transition-duration: 250ms;
@@ -62,27 +59,21 @@
 // DESkTOP
 @media screen and(min-width:1200px) {
 
-  .client-container {
+  .client__container {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
-  .client-list {
+  .client__list {
     display: flex;
     justify-content: center;
   }
 
-  .client-list-item {
-    display: inline-flex;
-    justify-content: center;
+  .client__item {
     align-items: center;
     border: 1px solid var(--c-social);
     border-radius: 4px;
     width: 170px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
 
     &:hover,
     &:focus {
@@ -94,18 +85,18 @@
     }
   }
 
-  .client-list-item-link {
+  .client__link {
     display: inline-flex;
     width: 100%;
     height: 92px;
     padding: 16px 32px;
   }
 
-  .client-list-item-link-icon {
+  .client__icon {
     fill: var(--c-social);
 
-    .client-list-item-link:hover &,
-    .client-list-item-link:focus & {
+    .client__link:hover &,
+    .client__link:focus & {
       fill: var(--c-blue);
       transition-property: fill, color;
       transition-duration: 250ms;

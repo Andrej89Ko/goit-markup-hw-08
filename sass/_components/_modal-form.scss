@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
   }
-  .modal-form-title {
+  .modal-form__title {
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
@@ -11,17 +11,17 @@
     color: var(--c-dark);
     margin-bottom: 12px;
   }
-  .modal-form-label {
+  .modal-form__label {
     margin-bottom: 10px;
   }
   
   
-  .modal-form-input-wrapper {
+  .modal-form__input-wrapper {
     position: relative;
     display: block;
     padding-top: 4px;
   }
-  .modal-form-input {
+  .modal-form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -38,7 +38,7 @@
         border-color: var(--c-blue);
       }
   }
-  .modal-form-icon {
+  .modal-form__icon {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -50,11 +50,12 @@
     transition-delay: 0ms;
     width: 18px;
     height: 18px;
-    .modal-form-input:focus + & {
+
+    .modal-form__input:focus + & {
       fill: var(--c-blue);
     }
   }
-  .modal-form-message {
+  .modal-form__message {
     height: 120px;
     width: 100%;
     resize: none;
@@ -72,7 +73,7 @@
       }
   }
  
-  .modal-form-checkbox-contract {
+  .modal-form__checkbox-contract {
     display: inline-block;
     font-weight: 400;
     font-size: 12px;
@@ -96,7 +97,7 @@
           margin-left: 10px;
         }
 
-          .modal-form-checkbox:checked + & {
+          .modal-form__checkbox:checked + & {
             content: '';
             background-image: url('../images/sprite/icon-check.svg');
             height: 15px;
@@ -127,7 +128,7 @@
     line-height: 1.71;
     }
   }
-  .modal-form-btn {
+  .modal-form__btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;

@@ -9,16 +9,16 @@
 
 // DESCTOP
 @media screen and(min-width: 1200px) {
-  .container-specification {
+  .specification__container {
     padding-bottom: 94px;
   }
 
-  .specification-list {
+  .specification__list {
     display: flex;
     justify-content: center;
   }
 
-  .specification-list-item {
+  .specification__item {
     position: relative;
 
     &:not(:last-child) {
@@ -26,7 +26,7 @@
     }
   }
 
-  .specification-list-item-img-container {
+  .specification__text-container {
     position: absolute;
     top: auto;
     bottom: 0;
@@ -36,7 +36,7 @@
     background-color: rgba(47, 48, 58, 0.8);
   }
 
-  .specification-list-item-img-container-text {
+  .specification__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
