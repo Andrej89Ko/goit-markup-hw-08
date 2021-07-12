@@ -1205,12 +1205,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team__item {
-    width: 270px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 4px;
-  }
   .team__item:not(:last-child) {
     margin-right: 30px;
   }
